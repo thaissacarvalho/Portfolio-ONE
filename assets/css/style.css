@@ -20,6 +20,8 @@ a {
     font-weight: 700;
     color: var(--preto);
     font-size: 1.5rem;
+    text-align: center;
+    padding: 16px 0 32px;
 }
 
 /* Header */
@@ -82,7 +84,7 @@ a {
 
 .redeSociais {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.95rem;
     color: var(--preto);
 }
 
@@ -117,8 +119,114 @@ a {
 /* Secao Skills e Hobbies */
 
 .container__dados {
-    width: 368px;
     display: flex;
-    padding: 32px 16px;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 16px;
+    padding: 16px 0;
+}
+
+.dados__card {
+    background: var(--branco);
+    width: 156px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    gap: 8px;
+}
+
+.simbologias {
+    width: 30px;
+    height: 27px;
+    padding: 0 16px;
+}
+
+.simbologia__titulo{
+    font-weight: bold;
+    color: var(--preto);
+    padding: 0 16px 16px;
+}
+
+/* Seção Formação acadêmica */
+
+.secao__fAcademica {
+    background-color: var(--LessViolet);
+}
+
+.ensino__container, .experiencia__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.ensino__card {
+    width: 296px;
+    height: 169px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.ensino__dados {
+    background-color: var(--branco);
+    height: 118px;
+    display: flex;
+    justify-content: center;
+}
+
+.ensino__assunto {
+    font-weight: 700;
+    color: var(--preto);
+}
+
+.ensino__duracao {
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+.espaco {
+    padding-bottom: 32px;
+}
+
+/* Experiência Profissional */
+.experiencia__dados {
+    height: 300px;
+}
+
+.experiencia__card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 100px;
+}
+
+.experiencia__imagemContainer {
+    padding-bottom: 16px;
+}
+
+.experiencia__imagem {
+    width: 296px;
+    height: 144px;
+}
+
+.botoes {
+    display: flex;
+    gap: 8px;
+}
+
+.direcionador__link {
+    width: 90px;
+    padding: 12px 16px;
+    border: solid;
+    text-align: center;
+    border: var(--darkViolet) solid;
+    color: var(--darkViolet);
+}
+
+.Site {
+    background-color: var(--darkViolet);
+    color: var(--branco);
 }
