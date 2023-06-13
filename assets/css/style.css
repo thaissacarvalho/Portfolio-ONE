@@ -1,0 +1,124 @@
+:root {
+    --branco: #FFFFFF;
+    --branco-bg: #F5F5F5;
+    --cinza: #E5E5E5;
+    --darkViolet: #9400D3;
+    --preto: #464646;
+    --LessViolet: #F3DCFD;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--branco-bg);
+}
+
+a {
+    text-decoration: none;
+}
+
+.secao__Titulo {
+    font-weight: 700;
+    color: var(--preto);
+    font-size: 1.5rem;
+}
+
+/* Header */
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.container__fotoTitulo {
+    display: flex;
+    align-items: center;
+}
+
+.meuNome {
+    padding-left: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.memoji {
+    width: 24px;
+    height: 24px;
+}
+
+.link__site {
+    color: var(--preto);
+    font-size: 0.8rem;
+}
+
+/* Seção Apresentação */
+
+.secao__apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.minha__foto {
+    width: 98px;
+    height: 98px;
+}
+
+.apresentando {
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+
+.resumo {
+    font-size: 1rem;
+    color: var(--preto);
+}
+
+.container__redeSociais {
+    display: flex;
+    gap: 8px;
+}
+
+.redeSociais {
+    font-weight: 700;
+    font-size: 1rem;
+    color: var(--preto);
+}
+
+/* Secao Sobre mim */
+
+.secao__sobreMim {
+    background-color: var(--LessViolet);
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+}
+
+.secao__TituloSM {
+    font-weight: 700;
+    color: var(--preto);
+    font-size: 1.5rem;
+}
+
+.resumo__Sobremim {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--preto);
+}
+
+.assinatura {
+    width: 140px;
+    height: 52px;
+}
+
+/* Secao Skills e Hobbies */
+
+.container__dados {
+    width: 368px;
+    display: flex;
+    padding: 32px 16px;
+    gap: 16px;
+}
