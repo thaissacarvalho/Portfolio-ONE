@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"> 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -158,7 +158,8 @@
                 <div class="experiencia__dados">
                     <div class="experiencia__card">
                         <div class="experiencia__imagemContainer">
-                            <img src="assets/images/ExperienciaProfissional/JDG.svg" alt="Na imagem possui a logo da JDG" class="experiencia__imagem">
+                            <img src="assets/images/ExperienciaProfissional/JDG.svg"
+                                alt="Na imagem possui a logo da JDG" class="experiencia__imagem">
                         </div>
                         <h1 class="experiencia__titulo">Desenvolvedor Front End</h1>
                         <p class="experiencia__instituicao">Voluntário - Juniors Developers Group</p>
@@ -171,7 +172,8 @@
                 <div class="experiencia__dados">
                     <div class="experiencia__card">
                         <div class="experiencia__imagemContainer">
-                            <img src="assets/images/ExperienciaProfissional/Decodificador.svg" alt="Na imagem possui um site de decodificador de texto" class="experiencia__imagem">
+                            <img src="assets/images/ExperienciaProfissional/Decodificador.svg"
+                                alt="Na imagem possui um site de decodificador de texto" class="experiencia__imagem">
                         </div>
                         <h1 class="experiencia__titulo">Decodificador de Texto</h1>
                         <p class="experiencia__instituicao">Challenge ONE + Alura</p>
@@ -184,7 +186,8 @@
                 <div class="experiencia__dados">
                     <div class="experiencia__card">
                         <div class="experiencia__imagemContainer">
-                            <img src="assets/images/ExperienciaProfissional/Bio.svg" alt="Imagem da minha biografia" class="experiencia__imagem">
+                            <img src="assets/images/ExperienciaProfissional/Bio.svg" alt="Imagem da minha biografia"
+                                class="experiencia__imagem">
                         </div>
                         <h1 class="experiencia__titulo">Biografia (Direcionador de Link)</h1>
                         <p class="experiencia__instituicao">Projeto pessoal</p>
@@ -197,7 +200,8 @@
                 <div class="experiencia__dados">
                     <div class="experiencia__card">
                         <div class="experiencia__imagemContainer">
-                            <img src="assets/images/ExperienciaProfissional/QR-Code.svg" alt="Na imagem tem um QR Code" class="experiencia__imagem">
+                            <img src="assets/images/ExperienciaProfissional/QR-Code.svg" alt="Na imagem tem um QR Code"
+                                class="experiencia__imagem">
                         </div>
                         <h1 class="experiencia__titulo">QR Code</h1>
                         <p class="experiencia__instituicao">Frontend Mentor</p>
@@ -210,9 +214,37 @@
             </div>
         </section>
         <section class="secao__Contato">
-            <h1 class="secao__Titulo"></h1>
+            <div class="apresentacao">
+                <h1 class="contato__titulo">Contato</h1>
+                <h4 class="contato__descricao">Quer entrar em contato comigo?<br>Preencha o formulário ao lado e
+                entrarei em contato o mais rápido possível.</h4>
+            </div>
+            <form action="">
+                <div class="inputs">
+                    <div class="single-input">
+                        <input type="text" class="input" id="nome" required>
+                        <label for="nome">Nome</label>
+                    </div>
+                    <div class="single-input">
+                        <input type="email" class="input" id="email" required>
+                        <label for="email">E-mail</label>
+                    </div>
+                    <div class="single-input">
+                        <input type="text" class="input" id="assunto" required>
+                        <label for="assunto">Assunto</label>
+                    </div>
+                    <div class="single-input">
+                        <textarea type="text" class="input textArea" id="assunto" required></textarea>
+                        <label for="assunto">Mensagem</label>
+                    </div>
+                </div>
+                    <button type="submit" class="botao__enviar">Enviar Mensagem</button>
+            </form>
         </section>
     </main>
-    <footer></footer>
+    <footer class="rodape">
+        <h3 class="autor">Desenvolvido por Thaissa Carvalho<br>jun/2023</h3>
+    </footer>
 </body>
+
 </html>

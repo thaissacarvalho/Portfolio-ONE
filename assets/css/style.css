@@ -5,6 +5,7 @@
     --darkViolet: #9400D3;
     --preto: #464646;
     --LessViolet: #F3DCFD;
+    --placeholder: #A2A2A2;
 }
 
 body {
@@ -142,7 +143,7 @@ a {
     padding: 0 16px;
 }
 
-.simbologia__titulo{
+.simbologia__titulo {
     font-weight: bold;
     color: var(--preto);
     padding: 0 16px 16px;
@@ -154,7 +155,8 @@ a {
     background-color: var(--LessViolet);
 }
 
-.ensino__container, .experiencia__container{
+.ensino__container,
+.experiencia__container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -229,4 +231,116 @@ a {
 .Site {
     background-color: var(--darkViolet);
     color: var(--branco);
+}
+
+/* Contato */
+
+.secao__Contato {
+    background-color: var(--LessViolet);
+    height: 675px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.apresentacao {
+    width: 296px;
+    height: 110px;
+}
+
+.contato__titulo {
+    width: 296px;
+    font-weight: 700;
+    color: var(--preto);
+    font-size: 1.5rem;
+}
+
+.contato__descricao {
+    width: 296px;
+}
+
+form {
+    width: 296px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.inputs {
+    height: 397px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.single-input{
+    width: 296px;
+    height: 56px;
+    position: relative;
+}
+.single-input label{
+    position: absolute;
+    bottom: 22px;
+    left: 12px;
+    color: var(--placeholder);
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input{
+    width: 284px;
+    height: 46px;
+    padding: 5px 0 0 12px;
+    border: 0;
+    border-bottom: 2px solid var(--cinza);
+    outline: 0;
+    font-size: 16px;
+    color: var(--preto);
+    transition: 0.5s ease-in-out;
+}
+
+.textArea {
+    resize: none;
+    height: 133px;
+}
+
+.input:focus,
+.input:valid{
+    border-bottom: 2px solid var(--darkViolet);
+}
+.input:focus ~ label,
+.input:valid ~ label{
+    transform: translateY(-18px);
+    font-size: 12px;
+    color: var(--darkViolet);
+}
+
+.botao__enviar {
+    width: 141px;
+    height: 40px;
+    position: relative;
+    top: 32px;
+    background-color: darkviolet;
+    padding: 12px 16px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Rodapé */
+
+.rodape {
+    height: 102px;
+    background-color: var(--branco);
+}
+
+.autor {
+    padding: 32px;
+    color: var(--preto);
+    font-weight: 500;
+    font-size: 1rem;
+    text-align: center;
 }
