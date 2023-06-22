@@ -8,6 +8,20 @@
     --placeholder: #A2A2A2;
 }
 
+body::-webkit-scrollbar {
+    width: 10px;               
+  }
+  
+body::-webkit-scrollbar-track {
+    background: var(--LessViolet);        
+  }
+  
+body::-webkit-scrollbar-thumb {
+    background-color: var(--darkViolet);    
+    border-radius: 20px;       
+    border: 2px solid var(--darkViolet);  
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     background-color: var(--branco-bg);
@@ -27,6 +41,10 @@ section {
     font-size: 1.5rem;
     text-align: center;
     padding: 32px 0 16px;
+}
+
+.telefone__Contato {
+    display: none;
 }
 
 /* Header */
@@ -77,6 +95,12 @@ section {
     font-size: 1.3rem;
 }
 
+.apresentacao__textos {
+    display: flex;
+    flex-direction: column;  
+    gap: 16px;
+}
+
 .resumo {
     font-size: 1rem;
     color: var(--preto);
@@ -101,7 +125,6 @@ section {
     flex-direction: column;
     padding: 16px;
     gap: 16px;
-    align-items: center;
 }
 
 .secao__TituloSM {
@@ -221,6 +244,10 @@ section {
     height: 144px;
 }
 
+.experiencia__titulo {
+    font-weight: 700;
+}
+
 .botoes {
     display: flex;
     gap: 8px;
@@ -252,9 +279,12 @@ section {
     gap: 32px;
 }
 
-.apresentacao {
+.contato__apresentacao {
     width: 296px;
     height: 110px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
 }
 
 .contato__titulo {
@@ -266,6 +296,12 @@ section {
 
 .contato__descricao {
     width: 296px;
+}
+
+.contato__tituloForm {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
 }
 
 form {
@@ -357,9 +393,10 @@ form {
     /* Apresentação */
 
     .secao__apresentacao {
+        justify-content: center;
         flex-direction: row;
         align-items: center;
-        gap: 32px;
+        gap: 48px;
     }
 
     .apresentacao__textos {
@@ -391,7 +428,7 @@ form {
     /* Skills & Hobbies */
 
     .dados__card {
-        width: 192px;
+        width: 224px;
     }
 
     /* Formação Academica */
@@ -436,7 +473,7 @@ form {
 
     /* Contato */
 
-    .apresentacao {
+    .contato__apresentacao {
         width: 704px;
         height: 72px;
         display: flex;
@@ -462,5 +499,133 @@ form {
 
     .input{
         width: 690px;
+    }
+}
+
+@media (min-width: 1000px) {
+
+    /* Apresentação */
+    .me__apresentando {
+        font-size: 2rem;
+    }
+
+    .resumo {
+        font-size: 1.375rem;
+    }
+
+    .redeSociais {
+        font-size: 1rem;
+    }
+
+    .minha__foto {
+        width: 300px;
+        height: 300px;
+    }
+
+    .apresentacao__textos {
+        gap: 16px;
+    }
+
+    /* Sobre Mim */
+
+    .secao__sobreMim {
+        padding: 48px 0 48px 64px;
+    }
+
+    /* Skills e Hobbies */
+
+    .dados__card {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* Formação Academica */
+
+    .ensino__card {
+        width: 200px;
+        height: 347px;
+    }
+    
+    .ensino__dados {
+        width: 100%;
+        height: 286px;
+    }
+
+    .ensino__imagem {
+        width: 98px;
+        height: 98px;
+        align-self: center;
+    }
+
+    /* Experiência Profissional */
+
+    .experiencia__container {
+        height: auto;
+    }
+    
+    .experiencia__card {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .experiencia__dados {
+        height: 350px;
+    }
+
+    .experiencia__imagemContainer {
+        width: 500px;
+    }
+
+    .orders {
+        order: 2;
+    }
+
+    .experiencia__imagem {
+        width: 100%;
+    }
+
+    .experiencia__textos {
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        gap: 8px;
+    }
+
+    /* Contato */
+
+    .telefone__Contato {
+        display: block;
+        width: 250px;
+    }
+
+    .secao__Contato {
+        flex-direction: row;
+    }
+
+    .contato__apresentacao {
+        width: 600px;
+    }
+
+    form {
+        width: 600px;
+    }
+
+    .contato__tituloForm {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .inputs {
+        width: 600px;
+        align-items: start;
+    }
+
+    .single-input {
+        width: 600px;
+    }
+
+    .input {
+        width: 600px;
     }
 }
