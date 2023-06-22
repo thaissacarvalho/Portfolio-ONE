@@ -17,12 +17,16 @@ a {
     text-decoration: none;
 }
 
+section {
+    padding-bottom: 32px;
+}
+
 .secao__Titulo {
     font-weight: 700;
     color: var(--preto);
     font-size: 1.5rem;
     text-align: center;
-    padding: 16px 0 32px;
+    padding: 32px 0 16px;
 }
 
 /* Header */
@@ -68,7 +72,7 @@ a {
     height: 98px;
 }
 
-.apresentando {
+.me__apresentando {
     font-weight: 700;
     font-size: 1.3rem;
 }
@@ -97,6 +101,7 @@ a {
     flex-direction: column;
     padding: 16px;
     gap: 16px;
+    align-items: center;
 }
 
 .secao__TituloSM {
@@ -110,11 +115,13 @@ a {
     flex-direction: column;
     gap: 16px;
     color: var(--preto);
+    font-size: 0.875rem;
 }
 
 .assinatura {
     width: 140px;
     height: 52px;
+    align-self: flex-start;
 }
 
 /* Secao Skills e Hobbies */
@@ -343,4 +350,117 @@ form {
     font-weight: 500;
     font-size: 1rem;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+
+    /* Apresentação */
+
+    .secao__apresentacao {
+        flex-direction: row;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .apresentacao__textos {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .minha__foto {
+        width: 146px;
+        height: 146px;
+        order: 2;
+    }
+
+    .container__redeSociais, .me__apresentando, .resumo {
+        width: 524px;
+    }
+
+    .container__redeSociais {
+        gap: 32px;
+    }
+
+    /* Sobre mim */
+
+    .secao__TituloSM, .resumo__Sobremim {
+        width: 704px;
+    }
+
+    /* Skills & Hobbies */
+
+    .dados__card {
+        width: 192px;
+    }
+
+    /* Formação Academica */
+
+    .ensino__container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .espaco {
+        padding: 0;
+    }
+
+    /* Experiência */
+
+    .experiencia__container {
+        height: 1900px; 
+        justify-content: start;
+    }
+       
+    .experiencia__container {
+        gap: 64px;
+    }
+
+    .experiencia__card {
+        margin: 0;
+    }
+
+    .experiencia__imagem {
+        background-color: var(--LessViolet);
+        width: 704px;
+        height: 320px;
+    }
+
+    .experiencia__dados {
+        height: 427px;
+    }
+
+    .experiencia__imagemContainer {
+        padding: 0;
+    }
+
+    /* Contato */
+
+    .apresentacao {
+        width: 704px;
+        height: 72px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .contato__titulo, .contato__descricao {
+        width: 100%;
+    }
+
+    form {
+        width: 704px;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+
+    .single-input {
+        width: 100%;
+    }
+
+    .input{
+        width: 690px;
+    }
 }

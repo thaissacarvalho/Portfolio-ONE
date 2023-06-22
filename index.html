@@ -21,17 +21,18 @@
     </header>
     <main>
         <section class="secao__apresentacao">
-            <img class="minha__foto" src="assets/images/minha-foto.svg"
-                alt="Jovem preta de cabelos crespos usando óculos e sorrindo. Essa sou eu.">
-            <h1 class="apresentando">Olá, meu nome é Thaissa Carvalho e construo páginas web</h1>
-            <p class="resumo">Eu estou me formando em e atualmente estou
-                participando no projeto Oracle ONE na Alura.
-            </p>
-            <div class="container__redeSociais">
-                <a href="" class="redeSociais">Github↗</a>
-                <a href="" class="redeSociais">LinkedIN↗</a>
-                <a href="" class="redeSociais">Instagram↗</a>
-                <a href="" class="redeSociais">Curriculo↗</a>
+            <img class="minha__foto" src="assets/images/minha-foto.svg" alt="Jovem preta de cabelos crespos usando óculos e sorrindo. Essa sou eu.">
+            <div class="apresentacao__textos">
+                <h1 class="me__apresentando">Olá, meu nome é Thaissa Carvalho e construo páginas web</h1>
+                <p class="resumo">Eu estou me formando em e atualmente estou
+                    participando no projeto Oracle ONE na Alura.
+                </p>
+                <div class="container__redeSociais">
+                    <a href="" class="redeSociais">Github↗</a>
+                    <a href="" class="redeSociais">LinkedIN↗</a>
+                    <a href="" class="redeSociais">Instagram↗</a>
+                    <a href="" class="redeSociais">Curriculo↗</a>
+                </div>
             </div>
         </section>
         <section class="secao__sobreMim">
@@ -219,7 +220,7 @@
                 <h4 class="contato__descricao">Quer entrar em contato comigo?<br>Preencha o formulário ao lado e
                 entrarei em contato o mais rápido possível.</h4>
             </div>
-            <form action="">
+            <form id="form">
                 <div class="inputs">
                     <div class="single-input">
                         <input type="text" class="input" id="nome" required>
@@ -234,7 +235,7 @@
                         <label for="assunto">Assunto</label>
                     </div>
                     <div class="single-input">
-                        <textarea type="text" class="input textArea" id="assunto" required></textarea>
+                        <textarea type="text" class="input textArea" id="mensagem" required></textarea>
                         <label for="assunto">Mensagem</label>
                     </div>
                 </div>
@@ -245,6 +246,6 @@
     <footer class="rodape">
         <h3 class="autor">Desenvolvido por Thaissa Carvalho<br>jun/2023</h3>
     </footer>
+    <script src="assets/javascript/script.js"></script>
 </body>
-
 </html>
